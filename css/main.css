@@ -1,0 +1,416 @@
+body {
+	/*changes font of everything in body sections */
+	font-family: "Open Sans", sans-serif;
+	/* pushes elements down */
+	padding-top: 50px;
+	/* sets all body margins at 0 (pushed to the left side/left upper corner */
+	margin: 0;
+}
+
+/* all elements within section */
+section {
+	/* specifies length the elements within 'sections' are pushed out */
+	padding: 50px 0;
+}
+
+/* all nav elements */
+nav {
+	/* makes background of nav bar green/blue */
+	background: #02908B;
+	/* stretches the height from up/down */
+	height: 60px;
+	left: 0;
+	/* fixes nav box on left side and condenses - green box and links stay in place as I scroll */
+	position: fixed;
+	right: 0;
+	/* no margin or left side white space */
+	top: 0;
+	/* places image in front of text */
+	z-index: 100;
+}
+
+/* all 'a' link inside nav */
+nav > a {
+	/* changes 'MYFOLIO to white */
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	/* makes 'MYFOLIO' bolder */
+	font-weight: 700;
+	left: 25px;
+	/* allows other elements to stack */
+	position: absolute;
+	text-align: left;
+	/* takes away underline */
+	text-decoration: none;
+	/* pushes down from top */
+	top: 10px;
+}
+
+/* targets 'FOLIO' in 'MYFOLIO' */
+nav span {
+	font-family: "Open Sans", sans-serif;
+	/* changes to mustard yellow */
+	color: #cfc91d;
+	text-align: left;
+}
+
+/* targets all ul in nav section */
+nav ul {
+	/* allows other elements to stack */
+	position: absolute;
+	/* moves links to right side of page */
+	right: 25px;
+	/* pushes down from top */
+	top: 5px;
+}
+
+/* targets the nav links */
+nav li {
+	/* allows links to sit next to each other */
+	display: inline-block;
+	/* spaces links out from each other */
+	padding: 0 15px;
+}
+
+/* targets only 'a' links that are listed in nav section */
+nav li > a {
+	/* made links white */
+	color: #fff;
+	/* takes away underline */
+	text-decoration: none;
+	/* animates element when hovering */
+	-webkit-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+/* targets all nav links to hover and focus */
+nav li > a:hover,
+nav li > a:focus {
+	/* when hovering, color changes to mustard yellow and transition lasts for 0.3s*/
+	color: #cfc91d;
+}
+
+header {
+	/* adds background of blue sweater to header */
+	background-attachment: fixed;
+	background-image: url(../img/headerbg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* sets starting position */
+	background-position: 100% 50%;
+	/* changes font color of header section */
+	color: #fff;
+	height: 500px;
+	/* allows space from text to the top */
+	padding-top: 15%;
+	text-align: center;
+}
+
+/* targets 'Lorem...' */
+header h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+/* targets 'INSIDIDUNT....' */
+header h2 {
+	font-size: 72px;
+	/* separates letters from each other */
+	letter-spacing: 20px;
+	/* moves closer to h1 */
+	margin: 0;
+}
+
+
+header p {
+	margin-top: 0;
+}
+
+/* gives space to image */
+header img {
+	padding: 35px 0;
+}
+
+/* targets 'KNOW MORE' */
+header a {
+	/* gives mustard bg color */
+	background-color: #CDC71D;
+	color: #0B1016;
+	font-size: 14px;
+	font-weight: bold;
+	/* gives space around link making bigger box */
+	padding: 10px 35px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+/* changes to white when hovering */
+header a:hover {
+	background-color: #fff;
+	color: #0B1016;
+	cursor: pointer;
+
+}
+
+/* id classified as 'about' */
+#about {
+	/* centers all elements within 'ABOUT' section */
+	text-align: center;
+}
+
+/* targets all titles */
+#about .title,
+#service .title,
+#contact .title{
+	color: #02918c;
+	font-size: 46px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#about img {
+	margin: 15px 0;
+}
+
+#about > p {
+	/* changed color of 1st paragraph to gray */
+	color: #7e8287;
+	line-height: 41px;
+	margin: 0 auto;
+	width: 70%;
+}
+
+/* targets specific phrase in 'about' section */
+#about span {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+/* targets all icons and divs within 'ABOUT ME' section*/
+.aboutBoxes {
+	color: #7e8287;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.aboutBox {
+	/* adds border lines to right side */
+	border-right: 1px solid black;
+	/* elements fall in 4square box */
+	float: left;
+	/* space between icons and text */
+	margin: 3% 0;
+	/* places 'ABOUT ME' section on left side, 'SERVICES' on right */
+	padding: 0 4%;
+	/* aligned next to each other - made a four square turn */
+	width: 16%;
+}
+
+/* headers */
+.aboutBox h2 {
+	font-size: 18px;
+}
+
+/* paragraphs */
+.aboutBox p {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/* icons */
+.aboutBox i {
+	color: #02918c;
+}
+
+.aboutBox:last-child {
+	border: none;
+}
+
+/* SERVICE SECTION */
+#service {
+	/* added photo of woman typing */
+	background-image: url(../img/service.png);
+	/* covers entire length of area */
+	background-size: cover;
+	/* condensed photo */
+	display: inline-block;
+	padding-left: 10%;
+}
+
+/* targets all divs within 'service' */
+.serviceWrapper {
+	width: 40%;
+}
+
+#service img {
+	margin: 15px 0;
+}
+
+/* targets paragraph under 'SERVICE' header */
+.serviceWrapper > p {
+	color: #7e8287;
+	/* spaced out lines */
+	line-height: 41px;
+}
+
+.serviceBox {
+	float: left;
+	/* moved 'SERVICE' section to left */
+	width: 40%;
+	color: #7e8287;
+}
+
+/* separated service left items and put space */
+.serviceBox.left {
+	margin-left: 15%;
+}
+
+/* targets 'Service' icons */
+.serviceBox i {
+	color: #02918c;
+	margin: 5px 0;
+}
+
+.serviceBox > p {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+/* CONTACT SECTION */
+#contact {
+	padding-bottom: 0;
+	text-align: center;
+}
+
+/* section break image */
+#contact img {
+	margin: 15px 0;
+}
+
+/* paragraph under id contact */
+#contact p {
+	color: #7e8287;
+	/* amount of space used for line */
+	line-height: 41px;
+	/* specifies width of element's content area (portion inside padding, border, margin) */
+	width: 53%;
+	margin: 0 auto 5%;
+}	
+
+/* targets 'Name', 'Email', input boxes */
+.contactForm {
+	/* changed bg to black */
+	background: #0B0B0B;
+	/* text turned gray */
+	color: #7D8186;
+	/* spaced out 'Name' down through 'Submit' */
+	padding: 50px 25px;
+}
+
+/* text boxes */
+.contactForm input {
+	background: transparent;
+	border: none;
+	/* adds line to top of boxes */
+	border-bottom: 1px solid #7D8186;
+	/* longer line */
+	font-size: 24px;
+	height: 30px;
+	text-align: center;
+	/* longer line */
+	width: 60%;
+}
+
+/* Message box */
+.contactForm textarea {
+	background: transparent;
+	border: none;
+	/* placed line under box */
+	border-bottom: 1px solid #7D8186;
+	border-top: 1px solid #7D8186;
+	/* adds text color */
+	color: #7D8186;
+	font-size: 24px;
+	text-align: center;
+	/* expanded length of box across page */
+	width: 60%;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+	/* outside of border that specifies style of outline */
+	outline: none;
+}
+
+/* ???? */
+.contactForm .half {
+	margin: 2% 25%;
+}
+
+/* ???? */
+.contactForm .three_quarters {
+	margin: 4% 10%;
+}
+
+/* 'SUBMIT' button */
+.contactForm button {
+	background-color: #CDC71D;
+	border: none;
+	/* specifies which sides elements around 'submit' are allowed to float */
+	clear: both;
+	color: #0B1016;
+	font-weight: bold;
+	font-size: 14px;
+	/* made mustard yellow button larger */
+	padding: 10px 35px;
+	text-decoration: none;
+	/* gradient of color when hovering */
+	transition: all 0.3s ease-in-out;
+}
+
+.contactForm button:hover {
+	/* changes to white while hovering on 'submit' */
+	background-color: #fff;
+	color: #0B1016;
+	cursor: pointer;
+}
+
+/* 'copyright' & 'MYFOLIO' at bottom of page */
+#sitefooter {
+	/* adds black bg */
+	background: #000;
+	/* increased box around footer */
+	padding: 10px 0;
+	width: 100%;
+}
+
+#sitefooter p {
+	/* changed to gray color */
+	color: #7e8287;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

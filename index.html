@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+	<!-- page in english -->
+	<html lang="en">
+		<head>
+			<!-- character set -->
+			<meta charset="utf-8">
+			<!-- creator of site -->
+			<meta name="author" content="Codify Academy">
+			<!-- description of website -->
+			<meta name="description" content="Codify Academy Week 2 Intermediate Project - Website Replication">
+
+			<!-- title -->
+			<title>MYFOLIO Website Replication</title>
+			<!-- favorite icon (pic in tab bar) -->
+			<link rel="shortcut icon" href="img/favicon.ico">
+			<!-- fontawesome icon link -->
+			<script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+			<!-- google fonts link -->
+			<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<!-- path from html to main.css -->
+			<link href="css/main.css" rel="stylesheet">
+		</head>	
+		<body>
+			<!-- navigation section -->
+			<nav>
+				<!-- link is link to my index.html - adds 'MYFOLIO' as link in upper left corner - span targets changee to 'FOLIO' -->
+				<a href="index.html">MY<span>FOLIO</span></a>
+
+				<ul>
+					<!-- adds 'HOME' as a link - text of link within link path within 'li' tag -->
+					<li><a href="#index">HOME</a></li>
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#service">SERVICES</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
+				</ul>	
+			</nav>
+
+			<!-- header section -->
+			<header>
+				<!-- adds first header  -->
+				<h1>Lorem ipsum dolor sit iusmod tempor</h1>
+				<!-- second header - smaller -->
+				<h2>INCIDIDUNT BORE</h2>
+				<!-- adds paragraph under second header -->
+				<p>Orem ipsum dolor sit amet, consectetur</p>
+				<!-- adds a photo of a 'section break' -->
+				<img src="img/break.png" alt="section break">
+				<!-- line break -->
+				<br>
+				<!-- adds another link -->
+				<a href="#about">KNOW MORE</a>
+			</header>	
+
+			<!-- targets id classifed 'about' inside section aka ABOUT ME SECTION -->
+			<section id="about">
+				<!-- header of first section -->
+				<div class="title">ABOUT ME</div>
+				<!-- adds another photo of a section break -->
+				<img src="img/sectionbreak.png" alt="section break">
+				<!-- adds paragraph - span targets specific phrase -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliguq. Ut enim ad minim veniam, <span>quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+
+				<!-- div container classified as 'aboutBoxes' -->
+				<div class="aboutBoxes">
+					<!-- container classified 'aboutBox' inside 'aboutBoxes' -->
+					<div class="aboutBox">
+						<!-- lightbulb icon -->
+						<i class="fa fa-lightbulb-o fa-2x"></i>
+						<!-- second heading -->
+						<h2>Title goes here</h2>
+						<!-- paragraph under header -->
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et</p>
+					<!-- closes div container for first 'aboutBox' -->
+					</div>	
+					<!-- container for pencil inside 'aboutBox' class -->
+					<div class="aboutBox">
+						<!-- adds pencil icon -->
+						<i class="fa fa-pencil fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et</p>
+					</div>
+					<!-- container for settings inside 'aboutBox' class -->
+					<div class="aboutBox">
+						<!-- settings icon -->
+						<i class="fa fa-cog fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et</p>
+					</div>
+					<!-- container for computer icon inside 'aboutBox' class -->
+					<div class="aboutBox">
+						<!-- computer icon -->
+						<i class="fa fa-laptop fa-2x"></i>	
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et</p>
+					</div>	
+				</div>
+			</section>
+
+			<!-- places 'service' as id inside own section aka SERVICE SECTION -->
+			<section id="service">	
+				<!-- places div container containing class named 'serviceWrapper'  -->
+				<div class="serviceWrapper">
+					<!-- div containing class called title called 'SERVICES' -->
+					<div class="title">SERVICES</div>
+					<!-- adds photo of section break -->
+					<img src="img/sectionbreak.png" alt="section break">
+					<!-- adds paragraph under heading - first:child -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore manga aliqua.</p>
+
+					<!-- places globe icon in div container classified as serviceBox -->
+					<div class="serviceBox">
+						<!-- adds globe icon -->
+						<i class="fa fa-globe fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore mag</p>
+					</div>
+					<!-- div container for 'serviceBox left' classes that will be on the left side -->
+					<div class="serviceBox left">
+						<!-- adds magnifying glass icon -->
+						<i class="fa fa-search fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore mag</p>	
+					</div>
+					<div class="serviceBox">
+						<!-- adds clock icon -->
+						<i class="fa fa-clock-o fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore mag</p>
+					</div>
+					<!-- div container for left serviceBox elements -->
+					<div class="serviceBox left">	
+						<!-- adds chart icon -->
+						<i class="fa fa-bar-chart fa-2x"></i>
+						<h2>Title goes here</h2>
+						<p>nsectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore mag</p>
+					</div>
+				</div>
+			</section>
+			
+			<!-- CONTACT SECTION -->
+			<section id="contact">
+				<!-- title inside contact section -->
+				<div class="title">CONTACT ME</div>
+				<img src="img/sectionbreak.png" alt="section break">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliguq.</p>
+
+				<!-- contact info to write in -->
+				<div class="contactForm">
+					<label>NAME</label>	
+					<!-- line break  -->
+					<br>
+					<!-- adds text box for writing in 'NAME' -->
+					<input type="text">
+					<!-- adds 3 line breaks -->
+					<br><br><br>
+					<label>EMAIL ADDRESS</label>
+					<br>
+					<input type="email">
+					<br><br><br>
+					<label>MESSAGE</label>
+					<br><br>
+					<!-- adds text box with 3 rows of space -->
+					<textarea rows="3"></textarea>
+					<br><br><br>
+					<!-- adds button for 'SUBMIT' -->
+					<button>SUBMIT</button>
+				</div>
+			</section>
+
+			<!-- id classified as sitefooter inside footer section -->
+			<footer id="sitefooter">
+				<!-- adds copyright symbol -->
+				<p>&copy; MYFOLIO</p>
+			</footer>
+		</body>
+</html>
